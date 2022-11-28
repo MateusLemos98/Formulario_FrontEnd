@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="styles-nav">
+          <h1>Formulário</h1>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <form class="box-form">
+          <div class="form-styles">
+            <div>
+              <label>NOME</label>
+              <input
+                class="form-input"
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite o seu Nome"
+              />
+            </div>
+
+            <div>
+              <label>E-MAIL</label>
+              <input
+                class="form-input"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Digite seu E-mail"
+              />
+            </div>
+
+            <div>
+              <label>IDADE</label>
+              <input
+                class="form-input"
+                type="text"
+                name="idade"
+                id="idade"
+                placeholder="Digite sua Idade"
+              />
+            </div>
+            <div class="container-box-radio">
+              <div class="control-radio">
+                <label>MAIOR DE IDADE ?</label>
+                <input
+                  type="radio"
+                  name="maioridade"
+                  value="true"
+                  id="midade"
+                />
+                <p>SIM</p>
+                <input
+                  type="radio"
+                  name="maioridade"
+                  value="false"
+                  id="midade"
+                />
+                <p>NÃO</p>
+              </div>
+            </div>
+            <div>
+              <label>DESEJA RECEBER NEWSLETTER</label>
+              <input
+                type="checkbox"
+                name="newsletter"
+                id="newsletter"
+                value="true"
+              />
+            </div>
+
+            <div>
+              <label>DEIXE SUA MENSAGEM:</label>
+              <textarea
+                name="mensagem"
+                id="mensagem"
+                cols="20"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+
+
+          <div class="styles-btns">
+            <input class="btn-primary" type="submit" name="enviar" id="send" value="ENVIAR" />
+            <input type="reset" name="limpar" value="LIMPAR" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
